@@ -1,0 +1,76 @@
+$main-color:rgb(4.2%, 65.8%, 90.9%);
+$text-color:rgb(7.5%, 40.4%, 53.8%);
+$menu-text-color:white;
+
+:root {
+    --text-color: red;
+}
+
+
+body {
+    background-image: url('../imgs/8-fon-dlya-sayta.png');
+
+    header {
+        height: 500px;
+        background-color: rgb(77.4%, 86.7%, 90.5%);
+        background-image: url("../imgs/maxresdefault.jpg");
+        background-position-y: 600px;
+        background-attachment: fixed;
+
+        z-index: 100;
+
+        nav {
+            margin: 0 auto;
+            width: 1200px;
+
+            ul.menu {
+                display: table-row;
+                margin: 0 auto;
+
+                li.menu-item {
+                    display: table-cell;
+                    width: 1000px;
+                    padding: 10px;
+                    border: solid transparent;
+                    border-width: 1px 0px 1px 1px;
+                    text-align: center;
+                    background-color: #0000004c;
+                    color: $menu-text-color;
+                    cursor: pointer;
+                    transition: all .2s ease-in-out;
+
+                    &:hover {
+                        background-color: $main-color;
+                        color: white;
+                    }
+                }
+
+                li.menu-item:last-child {
+                    border-width: 1px 1px 1px 1px;
+                }
+            }
+        }
+
+        .banner {
+            background-color: aliceblue;
+            margin: 25px auto;
+            height: 400px;
+            color: white;
+            text-shadow: 3px 3px 0 black;
+            box-shadow: 0 0 15px rgba(0%, 0%, 0%, 0.499);
+            background-image: url('../imgs/material-design-full-hd-background_1.jpg');
+            background-size: cover;
+        }
+    }
+
+    div.content {
+        border: solid $main-color;
+        border-width: 0px 1px 1px 1px;
+
+        section {
+            // background-color: #0000004c;
+            height: 200px;
+
+        }
+    }
+}
