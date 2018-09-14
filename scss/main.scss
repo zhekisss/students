@@ -74,9 +74,11 @@ body {
             height: auto;
 
             .block {
+                padding: 10px;
+                height: 450px;
                 .content {
+                    overflow: hidden;
                     padding-top: 25px;
-                    height: 450px;
                     background-color: $main-color;
                     box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.562);
 
