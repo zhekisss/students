@@ -11,8 +11,7 @@ body {
     background-attachment: fixed;
     z-index: 100; }
     body header nav {
-      margin: 0 auto;
-      width: 1200px; }
+      margin: 0 auto; }
       body header nav ul.menu {
         display: table-row;
         margin: 0 auto; }
@@ -23,12 +22,12 @@ body {
           border: solid transparent;
           border-width: 1px 0px 1px 1px;
           text-align: center;
-          background-color: #0000004c;
+          background-color: rgba(0, 0, 0, 0.35);
           color: white;
           cursor: pointer;
           transition: all .2s ease-in-out; }
           body header nav ul.menu li.menu-item:hover {
-            background-color: #0ba8e8;
+            background-color: rgba(11, 168, 232, 0.8);
             color: white; }
         body header nav ul.menu li.menu-item:last-child {
           border-width: 1px 1px 1px 1px; }
@@ -39,12 +38,51 @@ body {
       color: white;
       text-shadow: 3px 3px 0 black;
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.499);
-      background-image: url("../imgs/material-design-full-hd-background_1.jpg");
-      background-size: cover; }
+      background-size: cover;
+      background-color: rgba(11, 168, 232, 0.8); }
   body div.content {
-    border: solid #0ba8e8;
-    border-width: 0px 1px 1px 1px; }
+    margin-top: 25px; }
     body div.content section {
-      height: 200px; }
+      margin-bottom: 100px;
+      height: auto; }
+      body div.content section .block .content {
+        padding-top: 25px;
+        height: 450px;
+        background-color: rgba(11, 168, 232, 0.8);
+        box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.562); }
+        body div.content section .block .content form {
+          margin: 25px auto 25px auto;
+          width: 66%;
+          height: 350px;
+          border: 1px solid rgba(11, 168, 232, 0.8);
+          background-color: white; }
+          body div.content section .block .content form input[type="submit"] {
+            transition: all .2s ease-in-out;
+            cursor: pointer; }
+            body div.content section .block .content form input[type="submit"]:hover {
+              background-color: rgba(11, 168, 232, 0.8);
+              color: white; }
+          body div.content section .block .content form input, body div.content section .block .content form textarea {
+            margin: 5px auto;
+            padding: 3px;
+            height: 45px;
+            display: block;
+            font-size: 1.2em;
+            width: 95%;
+            background-color: white;
+            border: 1px solid rgba(11, 168, 232, 0.8);
+            color: rgba(11, 168, 232, 0.8);
+            transition: all .2s ease-in-out; }
+            body div.content section .block .content form input:first-child, body div.content section .block .content form textarea:first-child {
+              margin-top: 25px; }
+            body div.content section .block .content form input:focus, body div.content section .block .content form textarea:focus {
+              background-color: rgba(11, 168, 232, 0.8);
+              color: white; }
+          body div.content section .block .content form textarea {
+            height: 150px; }
+  body footer {
+    background-color: rgba(11, 168, 232, 0.8);
+    height: 250px;
+    color: white; }
 
 /*# sourceMappingURL=main.css.map */

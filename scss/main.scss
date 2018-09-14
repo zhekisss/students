@@ -1,4 +1,4 @@
-$main-color:rgb(4.2%, 65.8%, 90.9%);
+$main-color:rgba(4.2%, 65.8%, 90.9%, 0.8);
 $text-color:rgb(7.5%, 40.4%, 53.8%);
 $menu-text-color:white;
 
@@ -21,7 +21,6 @@ body {
 
         nav {
             margin: 0 auto;
-            width: 1200px;
 
             ul.menu {
                 display: table-row;
@@ -34,7 +33,7 @@ body {
                     border: solid transparent;
                     border-width: 1px 0px 1px 1px;
                     text-align: center;
-                    background-color: #0000004c;
+                    background-color: rgba(0%, 0%, 0%, 0.35);
                     color: $menu-text-color;
                     cursor: pointer;
                     transition: all .2s ease-in-out;
@@ -58,19 +57,74 @@ body {
             color: white;
             text-shadow: 3px 3px 0 black;
             box-shadow: 0 0 15px rgba(0%, 0%, 0%, 0.499);
-            background-image: url('../imgs/material-design-full-hd-background_1.jpg');
+            // background-image: url('../imgs/material-design-full-hd-background_1.jpg');
             background-size: cover;
+            background-color: $main-color;
         }
     }
 
     div.content {
-        border: solid $main-color;
-        border-width: 0px 1px 1px 1px;
+        // border: solid $main-color;
+        // border-width: 0px 1px 1px 1px;
+        margin-top: 25px;
 
         section {
             // background-color: #0000004c;
-            height: 200px;
+            margin-bottom: 100px;
+            height: auto;
 
+            .block {
+                .content {
+                    padding-top: 25px;
+                    height: 450px;
+                    background-color: $main-color;
+                    box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.562);
+
+                    form {
+                        margin:  25px auto 25px auto;
+                        width: 66%;
+                        height: 350px;
+                        border: 1px solid $main-color;
+                        background-color: white;
+                        input[type="submit"]{
+                            transition: all .2s ease-in-out;
+                            cursor: pointer;
+                            &:hover{
+                                background-color: $main-color;
+                                color: white;
+                                
+                            }
+                        }
+                        input, textarea {
+                            margin: 5px auto;
+                            padding: 3px;
+                            height: 45px;
+                            display: block;
+                            font-size: 1.2em;
+                            width: 95%;
+                            background-color: white;
+                            border: 1px solid $main-color;
+                            color: $main-color;
+                            transition: all .2s ease-in-out;
+                            &:first-child{
+                                margin-top: 25px;
+                            }
+                            &:focus{
+                                background-color: $main-color;
+                                color: white;                                
+                            }
+                        }
+                        textarea{
+                            height: 150px;
+                        }
+                    }
+                }
+            }
         }
+    }
+    footer{
+        background-color: $main-color;
+        height: 250px;
+        color: white;
     }
 }
